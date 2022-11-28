@@ -35,29 +35,42 @@
                 <div class="heading">
                     <h2>Contact</h2>
                 </div>
-                <form>
-                    <div class="mb-3"><label class="form-label" for="name">Votre Nom</label><input
-                            class="form-control item" type="text" id="name"></div>
-                    <div class="mb-3"><label class="form-label" for="subject">Sujet</label><input
-                            class="form-control item" type="text" id="subject"></div>
-                    <div class="mb-3"><label class="form-label" for="email">Email</label><input
-                            class="form-control item" type="email" id="email"></div>
-                    <div class="mb-3"><label class="form-label" for="message">Message</label><textarea
-                            class="form-control item" id="message"></textarea></div>
-                    <div class="mb-3"><button class="btn btn-primary btn-lg d-block w-100"
-                            type="submit">Soumettre</button></div>
-                    <hr class="my-5 ">
-                    <div class="mb-3"><h1 class="text-center fs-3">Mes réseaux sociaux</h1></div>
+                <form class="form_contact" action="https://formsubmit.co/c4940fbee54f745aeb93a6bd5ea4ed06" method="POST">
+                    <div class="mb-3">
+                        <label class="form-label" for="nom_contact">Votre Nom  <span class="text-danger">*</span></label>
+                        <input class="form-control item" type="text" id="nom_contact" name="nom_contact">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="sujet_contact">Sujet  <span class="text-danger">*</span></label>
+                        <input class="form-control item" type="text" id="sujet_contact" name="sujet_contact">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="email_contact">Email  <span class="text-danger">*</span></label>
+                        <input class="form-control item" type="email" id="email_contact" name="email">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="message_contact">Message  <span class="text-danger">*</span></label>
+                        <textarea class="form-control item" id="message_contact" name="message_contact"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <button class="btn btn-primary btn-lg d-block w-100" type="submit" id="btnSubmitContact">Soumettre</button>
+                    </div>
+                    <hr class="my-5">
+                    <div class="mb-3">
+                        <h1 class="text-center fs-3">Mes réseaux sociaux</h1>
+                    </div>
                     <div class="d-flex flex-direction-row justify-content-center gap-4">
-                        <a href="https://www.facebook.com/grougnet.raphael/"><i class="icon ion-social-facebook fs-1"></i></a>
-                        <a href="https://www.linkedin.com/in/raphaël-grougnet"><i class="icon ion-social-linkedin fs-1"></i></a>
+                        <a href="https://www.facebook.com/grougnet.raphael/"><i
+                                class="icon ion-social-facebook fs-1"></i></a>
+                        <a href="https://www.linkedin.com/in/raphaël-grougnet"><i
+                                class="icon ion-social-linkedin fs-1"></i></a>
                         <a href="https://github.com/watidev"><i class="icon ion-social-github fs-1"></i></a>
                     </div>
-                    
-                    
+
+
                 </form>
 
-                
+
             </div>
         </section>
     </main>
@@ -65,15 +78,17 @@
         <div class="container">
             <div class="links"><a href="cv.html">A propos</a><a href="contact.html">Contact</a><a
                     href="projects.html">Projets</a></div>
-                    <div class="social-icons"><a href="https://www.facebook.com/grougnet.raphael/"><i
+            <div class="social-icons"><a href="https://www.facebook.com/grougnet.raphael/"><i
                         class="icon ion-social-facebook"></i></a><a
                     href="https://www.linkedin.com/in/raphaël-grougnet"><i class="icon ion-social-linkedin"></i></a><a
                     href="https://github.com/watidev"><i class="icon ion-social-github"></i></a></div>
         </div>
     </footer>
+    <script src="assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
     <script src="assets/js/theme.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 
 </html>
