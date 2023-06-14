@@ -22,8 +22,8 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
                     <li class="nav-item"><a class="nav-link" href="projects.html">Projets</a></li>
-                    <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
-                    <li class="nav-item"><a class="nav-link" href="hire-me.html">Travailler avec moi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cv.html">Curriculum Vitae</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Me contacter</a></li>
                 </ul>
             </div>
         </div>
@@ -33,29 +33,60 @@
             <div class="container">
                 <div class="avatar" style="background-image:url(&quot;assets/img/icons/IMG_0544.jpeg&quot;);"></div>
                 <div class="about-me">
-                    <p>Bonjour ! Moi c'est Raphaël Grougnet. Je travaille comme développeur web Full Stack.<br>
-                        Je suis passionné par les belles interfaces, minimalistes et faciles à utiliser,mais aussi les application intuitives pour web comme pour le mobile.</p><a
-                        class="btn btn-outline-primary" role="button" href="/hire-me.html">Travailler avec moi</a>
+                    <p>Bonjour ! Moi c'est Raphaël Grougnet. Je travaille en tant que développeur web Full Stack.<br>
+                        Je suis passionné par les belles interfaces, minimalistes et faciles à utiliser,mais aussi les
+                        application intuitives pour web comme pour le mobile.</p>
+
                 </div>
             </div>
         </section>
         <section class="portfolio-block photography">
-            <div class="container">
-                <div class="row g-1">
-                    <div class="col-md-6 col-lg-4 item bg-transparent"><a><img class="img-fluid image scale-on-hover"
-                                src="assets/img/my-shots/DJI_0162.jpg"></a></div>
-                    <div class="col-md-6 col-lg-4 item bg-transparent"><a><img class="img-fluid image scale-on-hover"
-                                src="assets/img/my-shots/DJI_01441.jpg"></a></div>
-                    <div class="col-md-12 col-lg-4 item bg-transparent"><a><img class="img-fluid image scale-on-hover"
-                                src="assets/img/my-shots/DJI_0181.jpg"></a></div>
+            <div class="container d-flex justify-content-center">
+                <div id="carousel_site" class="carousel carousel-dark slide w-75" data-bs-ride="carousel" >
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel_site" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carousel_site" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carousel_site" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carousel_site" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carousel_site" data-bs-slide-to="4" aria-label="Slide 5"></button>
+
+                      </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/img/tech/auctionbay.png" class="d-block w-100 " alt="AuctionBay">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/tech/quintessance.png" class="d-block w-100 " alt="Quintessance">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/tech/cloudbreath.png" class="d-block w-100" alt="CloudBreath">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/tech/hidethepain.png" class="d-block w-100" alt="HideThePain">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/tech/glassanimals.png" class="d-block w-100" alt="GlassAnimals">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel_site"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel_site"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
+                
             </div>
         </section>
         <section class="portfolio-block call-to-action border-bottom">
             <div class="container">
                 <div class="d-flex justify-content-center align-items-center content">
                     <h3>Vous aimez ce que vous voyez ?</h3><a class="btn btn-outline-primary btn-lg"
-                        href="/hire-me.html">Travailler avec moi</a>
+                        href="/projects.html">Voir tous mes projets</a>
                 </div>
             </div>
         </section>
@@ -70,8 +101,11 @@
                             <div class="card-header bg-transparent border-0"><i class="icon ion-ios-star-outline"></i>
                             </div>
                             <div class="card-body">
-                                <h3 class="card-title">Web Developer</h3>
-                                <p class="card-text">Grâce à mes connaissances en développement d'application web et mobiles, je suis capable de fournir un travail complet en toute circonstances.</p>
+                                <h3 class="card-title">Maîtrise technique</h3>
+                                <p class="card-text">Je possède une solide maîtrise technique des langages de
+                                    programmation, des frameworks, des outils et des plateformes liés au développement
+                                    web. Je suis toujours en recherche de nouveautées pour agrandir mes connaissances.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -81,17 +115,23 @@
                                     class="icon ion-ios-lightbulb-outline"></i></div>
                             <div class="card-body">
                                 <h3 class="card-title">Culture Web</h3>
-                                <p class="card-text">Ma connaissance de la Culture Web très approfondie en fait un atout majeur dans ce milieu car il est important d'être à jour des dernières tendances.</p>
+                                <p class="card-text">Ma connaissance de la Culture Web très approfondie en fait un atout
+                                    majeur dans ce milieu car il est important d'être à jour des dernières tendances.
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card special-skill-item border-0">
-                            <div class="card-header bg-transparent border-0"><i class="icon ion-ios-camera-outline"></i>
+                            <div class="card-header bg-transparent border-0"><i class="icon ion-ios-search"></i>
                             </div>
                             <div class="card-body">
-                                <h3 class="card-title">Prise d'images au drone</h3>
-                                <p class="card-text">La possession d'un drone monté d'une caméra vidéo me permet de prendre des clichés et vidéos depuis un angle inatteignable depuis le sol.</p>
+                                <h3 class="card-title">Perfectionnisme</h3>
+                                <p class="card-text">Je m'efforce de créer des sites web impeccables, en accordant une
+                                    attention minutieuse aux détails.
+                                    Mon perfectionnisme garantit des résultats de qualité et des sites web qui se
+                                    démarquent par leur esthétique et leur fonctionnalité.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -104,7 +144,9 @@
             <div class="row align-items-center">
                 <div class="col-md-12 col-lg-5 offset-lg-1 text">
                     <h3>Mes projets web</h3>
-                    <p>Chacun de mes projets web sont faits avec le coeur, et visent toujours l'excellence. Je cherche toujours à en apprendre plus grâce à ces projets et ils me permettent d'enrichir mes connaissances.</p>
+                    <p>Chacun de mes projets web sont faits avec le coeur, et visent toujours l'excellence. Je cherche
+                        toujours à en apprendre plus grâce à ces projets et ils me permettent d'enrichir mes
+                        connaissances.</p>
                 </div>
                 <div class="col-md-12 col-lg-5">
                     <div class="portfolio-laptop-mockup">
