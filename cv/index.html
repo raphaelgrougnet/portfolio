@@ -29,10 +29,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
     <!-- <link rel="icon" type="image/png" href="/assets/img/icons/favicon_white.png" media="(prefers-color-scheme: dark)">
     <link rel="icon" type="image/png" href="/assets/img/icons/favicon_black.png" media="(prefers-color-scheme: light)"> -->
-    <link rel="icon" type="image/png" href="/assets/img/icons/IMG_0544-rounded.jpeg">
+    <link rel="icon" type="image/png" href="/assets/img/icons/PP_BG_Bleu_rounded.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
+<style>
+    .fab-download{
+        position: fixed;
+        bottom: 5%;
+        right: 1vw;
+    }
 
+    @media (min-width: 1600px) {
+        .fab-download {
+            right: 5%;
+        }
+    }
+</style>
 <body>
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
         <div class="container"><a class="navbar-brand logo" href="/">Raphaël Grougnet</a><button
@@ -131,13 +143,16 @@
                         <p class="text-muted">A venir...</p>
                     </div>
                 </div>
-                <div class="hobbies group">
+                <div class="cv-download group">
                     <div class="heading">
-                        <h2 class="text-center">Loisirs</h2>
+                        <h2 class="text-center">Télécharger mon CV</h2>
                     </div>
-                    <p class="text-center text-muted">Les jeux-videos et le développement sont mes passions principales
-                        mais aussi sortir me promener et prendre des photos avec mon téléphone ou bien mon drone afin de
-                        produire des vidéos. Je pratique aussi du sport en salle pour rester en bonne santé.</p>
+                    <div class="row">
+                        <div class="col-md-12 d-flex flex-column align-items-center gap-2">
+                            <img src="/assets/img/icons/CV_CEGEP_STAGE.png" class="img-thumbnail" alt="CV">
+                            <a class="btn btn-primary" href="/assets/documents/curriculum-vitae-raphael-grougnet.pdf" download>Télécharger</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="group">
                     <div class="row">
@@ -203,6 +218,7 @@
             </div>
         </div>
     </footer>
+    <a download href="/assets/documents/curriculum-vitae-raphael-grougnet.pdf" class="btn fab-download btn-primary shadow fs-5 d-flex justify-content-center align-items-center gap-3">Téléchargez mon CV ! <i class="icon ion-android-document fs-3"></i></a>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
     <script src="/assets/js/theme.js"></script>
